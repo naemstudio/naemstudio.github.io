@@ -1,38 +1,86 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en" data-theme="dark"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Naem Studio | Websites for salons, clinics &amp; restaurants</title>
 <meta name="description" content="Naem Studio designs sharp one-page websites for local businesses. See your demo first. Pay only if you love it.">
-<meta property="og:title" content="Naem Studio"><meta property="og:description" content="One-page websites for salons, clinics & restaurants. Demo first, pay only if you love it.">
+<link rel="canonical" href="https://naemstudio.github.io/">
+<meta property="og:type" content="website"><meta property="og:url" content="https://naemstudio.github.io/">
+<meta property="og:title" content="Naem Studio"><meta property="og:description" content="One-page websites for salons, clinics &amp; restaurants. Demo first, pay only if you love it.">
+<meta property="og:image" content="https://naemstudio.github.io/og.png"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0f0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0f0e'/%3E%3Ctext x='32' y='44' font-size='38' text-anchor='middle' font-family='Georgia,serif' fill='%23d4a95a'%3EN%3C/text%3E%3C/svg%3E">
+<script>
+/* Theme: saved choice wins, otherwise follow the device (system) setting, live. */
+(function(){var d=document.documentElement,mq=window.matchMedia&&matchMedia("(prefers-color-scheme: light)");
+function saved(){try{var t=localStorage.getItem("ns-theme");return t==="light"||t==="dark"?t:null}catch(e){return null}}
+function apply(t){d.setAttribute("data-theme",t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#faf7f0":"#0b0f0e"}
+window.__nsTheme={apply:apply,saved:saved,sys:function(){return mq&&mq.matches?"light":"dark"}};
+apply(saved()||window.__nsTheme.sys());
+if(mq){var f=function(){if(!saved())apply(window.__nsTheme.sys())};mq.addEventListener?mq.addEventListener("change",f):mq.addListener(f)}})();
+</script>
 <style>
-:root{--bg:#0b0f0e;--s:#131918;--s2:#1a2220;--tx:#f3efe6;--mu:#97a39e;--ac:#d4a95a;--ln:#26302d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+:root{--bg:#0b0f0e;--s:#131918;--s2:#1a2220;--tx:#f3efe6;--mu:#97a39e;--ac:#d4a95a;--ac2:#e6bf78;--on:#15110a;--ln:#26302d;--nav:rgba(11,15,14,.82);--glow:rgba(212,169,90,.18);--sh:0 24px 60px rgba(0,0,0,.45);color-scheme:dark}
+html[data-theme=light]{--bg:#faf7f0;--s:#ffffff;--s2:#f3eee2;--tx:#1b1a17;--mu:#6b6a63;--ac:#a8741a;--ac2:#8f6213;--on:#fffaf0;--ln:#e4dccb;--nav:rgba(250,247,240,.85);--glow:rgba(168,116,26,.16);--sh:0 24px 60px rgba(60,45,10,.16);color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip;transition:background .3s,color .3s}
 a{color:inherit}.w{max-width:1060px;margin:0 auto;padding:0 20px}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.02em;line-height:1.08;margin:0}
-nav{position:sticky;top:0;z-index:10;background:rgba(11,15,14,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+nav{position:sticky;top:0;z-index:20;background:var(--nav);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
 nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
 .logo{font-family:Georgia,serif;font-size:20px;text-decoration:none}.logo i{color:var(--ac)}
-nav .r{display:flex;align-items:center;gap:22px;font-size:14px}nav .r a{text-decoration:none;color:var(--mu)}
-.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:.25s;border:1px solid transparent}
-.b1{background:var(--ac);color:#15110a}.b1:hover{background:#e6bf78}
-.b2{border-color:#3a4642;color:var(--tx)}.b2:hover{border-color:var(--ac);color:var(--ac)}
-nav .btn{padding:8px 16px;font-size:13.5px;color:#15110a}
-.hero{padding:62px 0 44px;background:radial-gradient(800px 340px at 70% -20%,rgba(212,169,90,.18),transparent 70%)}
-.hero h1{font-size:clamp(40px,8.4vw,84px);max-width:860px;margin:16px 0 18px}.hero h1 em{color:var(--ac)}
+nav .r{display:flex;align-items:center;gap:18px;font-size:14px}nav .r a{text-decoration:none;color:var(--mu)}nav .r a:hover{color:var(--tx)}
+.tg{width:38px;height:38px;border-radius:50%;border:1px solid var(--ln);background:var(--s);color:var(--tx);display:grid;place-items:center;cursor:pointer;padding:0;transition:.25s}
+.tg:hover{border-color:var(--ac);transform:rotate(15deg)}.tg svg{width:18px;height:18px;grid-area:1/1;transition:.3s}
+.tg .moon{opacity:1}.tg .sun{opacity:0;transform:scale(.5) rotate(-60deg)}
+html[data-theme=light] .tg .moon{opacity:0;transform:scale(.5) rotate(60deg)}html[data-theme=light] .tg .sun{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:.25s;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.b1{background:var(--ac);color:var(--on)}.b1:hover{background:var(--ac2);transform:translateY(-1px)}
+.b2{border-color:var(--ln);color:var(--tx);background:transparent}.b2:hover{border-color:var(--ac);color:var(--ac)}
+nav .btn{padding:8px 16px;font-size:13.5px;color:var(--on)}nav .r a.btn{color:var(--on)}
+.hero{position:relative;overflow:hidden;padding:54px 0 40px}
+.aur{position:absolute;inset:-20% -10% auto -10%;height:120%;pointer-events:none;z-index:0;filter:blur(60px);opacity:.9}
+.aur i{position:absolute;border-radius:50%;animation:fl 14s ease-in-out infinite alternate}
+.aur i:nth-child(1){width:420px;height:420px;background:var(--glow);right:8%;top:0}
+.aur i:nth-child(2){width:300px;height:300px;background:rgba(37,211,102,.10);left:5%;top:30%;animation-delay:-5s}
+.aur i:nth-child(3){width:260px;height:260px;background:rgba(99,102,241,.10);right:30%;top:55%;animation-delay:-9s}
+@keyframes fl{to{transform:translate(40px,-30px) scale(1.15)}}
+.hero .w{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(38px,6.6vw,76px);margin:16px 0 18px}
+.hero h1 em{font-style:italic;background:linear-gradient(100deg,var(--ac),var(--ac2),var(--ac));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
 .hero p{max-width:520px;color:var(--mu);font-size:18px;margin:0}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.strip{display:flex;gap:10px 28px;flex-wrap:wrap;margin-top:30px;padding-top:20px;border-top:1px solid var(--ln)}
+.pills{display:flex;gap:8px 10px;flex-wrap:wrap;margin-top:24px}
+.pills span{font:600 12px/1 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:99px;border:1px solid var(--ln);background:var(--s);color:var(--mu)}
+.pills span:before{content:"●";color:var(--ac);margin-right:7px;font-size:9px}
+/* phone mock */
+.phone{justify-self:center;width:230px;aspect-ratio:9/18.5;border-radius:34px;background:#111;padding:9px;box-shadow:var(--sh),0 0 0 1px var(--ln);transform:rotate(4deg);animation:bob 6s ease-in-out infinite;position:relative}
+@keyframes bob{50%{transform:rotate(2deg) translateY(-10px)}}
+.phone:before{content:"";position:absolute;top:14px;left:50%;width:62px;height:16px;margin-left:-31px;background:#111;border-radius:99px;z-index:3}
+.psc{height:100%;border-radius:26px;overflow:hidden;background:#fff;color:#1f2937;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
+.psc .pb{padding:30px 12px 8px;font:700 12px system-ui;background:#fff;border-bottom:1px solid #eee}
+.psc .ph1{background:linear-gradient(135deg,#be185d,#831843);color:#fff;text-align:center;padding:18px 12px 20px}
+.psc .ph1 b{display:block;font:400 21px/1.12 Georgia,serif}.psc .ph1 em{display:inline-block;margin-top:10px;background:#25d366;color:#fff;font:700 10.5px system-ui;padding:7px 11px;border-radius:99px;font-style:normal}
+.psc .row{margin:10px 12px 0;padding:9px 11px;border-radius:11px;background:#fdf2f8;display:flex;justify-content:space-between;font:600 11px system-ui}
+.psc .row em{font-style:normal;color:#831843}
+.badge{position:absolute;z-index:4;background:var(--s);color:var(--tx);border:1px solid var(--ln);border-radius:14px;padding:8px 12px;font:600 12px system-ui;box-shadow:var(--sh);display:flex;gap:8px;align-items:center;white-space:nowrap}
+.badge.a{right:-22px;top:-12px;animation:bob2 5s ease-in-out infinite}.badge.b{left:-30px;bottom:-12px;animation:bob2 6s ease-in-out -2s infinite}
+@keyframes bob2{50%{transform:translateY(-8px)}}
+.badge svg{width:18px;height:18px}
+/* marquee */
+.mq{border-block:1px solid var(--ln);background:var(--s);overflow:hidden;white-space:nowrap}
+.mq div{display:inline-block;padding:13px 0;animation:mq 28s linear infinite;font:600 13px ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.mq span{margin:0 22px}.mq span:after{content:"✦";margin-left:44px;color:var(--ac)}
+@keyframes mq{to{transform:translateX(-50%)}}
 section{padding:40px 0}.hd{margin-bottom:22px}.hd h2{font-size:clamp(28px,5vw,44px);margin-top:10px}
 .bento{display:grid;gap:12px;grid-template-columns:repeat(6,1fr)}
-.t{background:var(--s);border:1px solid var(--ln);border-radius:22px;padding:22px;grid-column:span 2;transition:.25s}
-.t:hover{border-color:#3d4a45}.t.w3{grid-column:span 3}.t.w4{grid-column:span 4}.t.inc{grid-column:span 2}.t.w6{grid-column:span 6}
+.t{background:var(--s);border:1px solid var(--ln);border-radius:22px;padding:22px;grid-column:span 2;transition:.25s;min-width:0}
+.t:hover{border-color:var(--ac);transform:translateY(-3px);box-shadow:var(--sh)}.t.w3{grid-column:span 3}.t.w4{grid-column:span 4}.t.inc{grid-column:span 2}.t.w6{grid-column:span 6}
 .t h3{font-size:23px;margin:10px 0 6px}.t p{margin:0;color:var(--mu);font-size:15px}
 .n{font-family:Georgia,serif;font-size:44px;color:var(--ac);line-height:1}
-.hl{background:linear-gradient(135deg,#1d2623,#141a18)}
+.hl{background:linear-gradient(135deg,var(--s2),var(--s))}
 .ph{display:block;text-decoration:none}.ph .scr{height:150px;border-radius:14px;margin-bottom:14px;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;font-family:Georgia,serif;font-size:19px;line-height:1.15;position:relative;overflow:hidden}
 .scr:before{content:"";position:absolute;inset:0;background:radial-gradient(220px 120px at 80% 0,rgba(255,255,255,.25),transparent 70%)}
 .scr span{position:relative}.scr small{position:relative;display:inline-block;margin-top:8px;align-self:flex-start;background:#25d366;color:#fff;font:600 11px/1 system-ui;padding:6px 10px;border-radius:99px}
@@ -42,33 +90,73 @@ section{padding:40px 0}.hd{margin-bottom:22px}.hd h2{font-size:clamp(28px,5vw,44
 .ck{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:9px;font-size:15px}.ck li:before{content:"✓ ";color:var(--ac);font-weight:700}
 details{border-top:1px solid var(--ln);padding:16px 0}details:last-child{border-bottom:1px solid var(--ln)}
 summary{cursor:pointer;font-family:Georgia,serif;font-size:20px;list-style:none;display:flex;justify-content:space-between}
-summary:after{content:"+";color:var(--ac)}details[open] summary:after{content:"–"}details p{color:var(--mu);margin:10px 0 0;max-width:640px}
-.final{text-align:center;background:linear-gradient(135deg,#1f2a26,#111816);border:1px solid var(--ln);border-radius:28px;padding:44px 20px}
-.final h2{font-size:clamp(30px,6vw,52px)}.final p{color:var(--mu);margin:12px auto 0;max-width:460px}.final .cta{justify-content:center}
-.hid{display:none}footer{text-align:center;color:var(--mu);font-size:13px;padding:22px 20px 30px}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--ac)}details[open] summary:after{content:"–"}details p{color:var(--mu);margin:10px 0 0;max-width:640px}
+/* contact */
+.final{background:linear-gradient(135deg,var(--s2),var(--s));border:1px solid var(--ln);border-radius:28px;padding:34px 22px;display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;position:relative;overflow:hidden}
+.final:before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:var(--glow);filter:blur(30px)}
+.final>*{position:relative;min-width:0}
+.final h2{font-size:clamp(28px,5vw,46px);margin:10px 0 10px}.final .lead{color:var(--mu);margin:0 0 18px;max-width:420px}
+.ch{display:grid;gap:10px}
+.cb{display:flex;align-items:center;gap:14px;padding:12px 14px;border-radius:16px;border:1px solid var(--ln);background:var(--s);text-decoration:none;transition:.25s}
+.cb:hover{border-color:var(--ac);transform:translateX(4px)}.cb svg{width:38px;height:38px;flex:none}
+.cb b{display:block;font-size:15px}.cb span{display:block;font-size:13px;color:var(--mu);overflow-wrap:anywhere}
+.fm{background:var(--s);border:1px solid var(--ln);border-radius:22px;padding:20px;display:grid;gap:12px;align-content:start}
+.fm h3{font-size:22px}.fm form{display:grid;gap:12px}.fm .sub{margin:0;color:var(--mu);font-size:14px}
+.fm label{display:grid;gap:6px;font-size:12px;font-weight:600;color:var(--mu);letter-spacing:.04em;text-transform:uppercase}
+.fm input,.fm textarea{width:100%;font:16px/1.3 inherit;font-family:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:12px 14px;outline:none;transition:.2s;text-transform:none;letter-spacing:0;font-weight:400}
+.fm input:focus,.fm textarea:focus{border-color:var(--ac);box-shadow:0 0 0 3px var(--glow)}
+.fm textarea{resize:vertical;min-height:70px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--bg);border:1px solid var(--ln);border-radius:14px;padding:4px}
+.seg button{display:flex;align-items:center;justify-content:center;gap:8px;border:0;background:transparent;color:var(--mu);font:600 14px inherit;font-family:inherit;padding:10px;border-radius:10px;cursor:pointer;transition:.2s}
+.seg button svg{width:20px;height:20px}.seg button.on{background:var(--s2);color:var(--tx);box-shadow:0 0 0 1px var(--ac) inset}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.fm .btn{width:100%;font-size:16px;padding:14px}.fm .btn[disabled]{opacity:.6;cursor:wait}
+.msg{font-size:14px;min-height:20px;margin:0;color:var(--mu)}.msg.err{color:#ef4444}.msg.ok{color:#22c55e}
+.msg a{color:var(--ac);font-weight:600}
+.done{display:none;text-align:center;padding:18px 6px}.done .ck2{width:60px;height:60px;border-radius:50%;background:rgba(34,197,94,.15);color:#22c55e;display:grid;place-items:center;margin:0 auto 12px;font-size:30px}
+.done h3{margin-bottom:6px}.done p{color:var(--mu);margin:0}
+.fm.sent form{display:none}.fm.sent .done{display:block}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.35);text-decoration:none}
+.fab svg{width:30px;height:30px}.fab:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pl 2.2s ease-out infinite}
+@keyframes pl{to{transform:scale(1.5);opacity:0}}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:22px 20px 84px}
 .rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
-@media(max-width:700px){nav .r a:not(.btn){display:none}.t,.t.w3,.t.w4,.t.inc{grid-column:span 6}
-.hero{padding:26px 0 22px}.hero h1{font-size:clamp(32px,9.5vw,44px);margin:10px 0 10px}.hero p{font-size:15.5px}.cta{margin-top:16px}.cta .btn{padding:11px 20px;font-size:14px}.strip{display:none}
-section{padding:18px 0}.hd{margin-bottom:12px}.hd h2{font-size:26px;margin-top:6px}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}.phone{width:190px;margin-top:6px}.final{grid-template-columns:1fr}}
+@media(max-width:700px){nav .r a:not(.btn){display:none}nav .r{gap:10px}.t,.t.w3,.t.w4,.t.inc{grid-column:span 6}
+.hero{padding:26px 0 24px}.hero h1{font-size:clamp(32px,9.5vw,44px);margin:10px 0 10px}.hero p{font-size:15.5px}.cta{margin-top:16px}.cta .btn{padding:11px 20px;font-size:14px}.pills{margin-top:16px}
+section{padding:22px 0}.hd{margin-bottom:12px}.hd h2{font-size:26px;margin-top:6px}
 .bento{gap:10px}.t{padding:14px 16px;border-radius:18px}.t h3{font-size:18px;margin:4px 0 2px}.t p{font-size:14px}
 .pro .t{display:flex;gap:14px;align-items:center}.pro .n{font-size:28px;min-width:38px}.pro .t div+div{flex:1}
 .hl p{display:none}.hl h3{font-size:17px}
-.sc{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:0 20px 6px}.sc .t{min-width:72%;scroll-snap-align:start}.scr{height:96px!important;margin-bottom:8px!important;font-size:16px!important}.sc .t p{display:none}
-.pr{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}.price{font-size:24px!important}.price small{font-size:10px!important}
+/* demos: stacked rows, no sideways scrolling */
+.sc{display:grid!important;grid-template-columns:1fr!important;overflow:visible;margin:0;padding:0}
+.sc .t{grid-column:auto!important;min-width:0;display:grid;grid-template-columns:104px 1fr;gap:4px 14px;align-items:center;padding:12px}
+.sc .t .scr{grid-row:1/4;height:88px!important;margin:0!important;padding:8px!important;font-size:12.5px!important;border-radius:12px}
+.sc .t .scr small{font-size:9px;padding:4px 7px;margin-top:5px}
+.sc .t h3{margin:0}.sc .t p{display:block}.sc .t .vw{margin:0;font-size:13px}
+.pr{gap:8px!important}.price{font-size:24px!important}.price small{font-size:10px!important}
 .ck{grid-template-columns:1fr 1fr;font-size:13.5px;gap:6px}
 summary{font-size:17px}details{padding:11px 0}details p{font-size:14px;margin-top:6px}
-.final{padding:26px 16px;border-radius:22px}.final h2{font-size:28px}.final p{font-size:14.5px}footer{padding:14px 20px 22px}}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.final{padding:22px 14px;border-radius:22px}.fm{padding:16px}footer{padding:14px 20px 84px}.aur i:nth-child(1){width:260px;height:260px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.aur i,.phone,.badge,.mq div,.hero h1 em,.fab:before{animation:none}}
 </style></head><body>
-<nav><div class="w"><a class="logo" href="#">Naem<i> Studio</i></a><div class="r"><a href="#demos">Demos</a><a href="#price">Pricing</a><a href="#faq">FAQ</a><a class="btn b1" href="#contact">Free demo</a></div></div></nav>
+<nav><div class="w"><a class="logo" href="#">Naem<i> Studio</i></a><div class="r"><a href="#demos">Demos</a><a href="#price">Pricing</a><a href="#faq">FAQ</a><button class="tg" id="tg" type="button" aria-label="Switch day / night mode" title="Day / Night"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.800A9 9 0 1 1 11.200 3a7 7 0 0 0 9.800 9.800z"/></svg></button><a class="btn b1" href="#contact">Free demo</a></div></div></nav>
 
-<header class="hero"><div class="w">
+<header class="hero"><div class="aur"><i></i><i></i><i></i></div><div class="w">
+<div>
 <span class="mono">Web design · UK · Australia · UAE</span>
 <h1>Websites that make your business look <em>worth booking.</em></h1>
 <p>Sharp one-page sites for salons, clinics and restaurants. We build your demo first. You pay only if you love it.</p>
 <div class="cta"><a class="btn b1" href="#contact">Get your free demo</a><a class="btn b2" href="#demos">See sample sites</a></div>
-<div class="strip"><span class="mono">Demo before you pay</span><span class="mono">Mobile-first</span><span class="mono">WhatsApp + Messenger</span></div>
+<div class="pills"><span>Demo before you pay</span><span>Mobile-first</span><span>WhatsApp + Messenger</span></div>
+</div>
+<div class="phone" aria-hidden="true">
+<div class="badge a"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.900 11.500 24 11.500zm0 2.300c5.600 0 10.200 4.600 10.200 10.200S29.600 34.200 24 34.200c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-3.800 1 1-3.700-.3-.4c-1.100-1.700-1.600-3.500-1.600-5.400 0-5.600 4.600-10.200 10.200-10.200zm-4.200 4.600c-.3 0-.7.100-1 .5-.4.400-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.700 1 4.400.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.400-.9 1.200-1.100 1.400-.2.200-.4.300-.7.100-.4-.2-1.500-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.200-.8.200-.2.400-.4.600-.7.200-.2.300-.4.400-.7.100-.3.100-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg>One tap to book</div>
+<div class="psc"><div class="pb">💇 Aria Hair Studio</div><div class="ph1"><b>Look good.<br>Feel great.</b><em>Book on WhatsApp</em></div><div class="row">Haircut &amp; Styling<em>from £30</em></div><div class="row">Colour &amp; Highlights<em>from £70</em></div><div class="row">Blow-dry<em>from £25</em></div></div>
+<div class="badge b">⭐ Looks pro on any phone</div>
+</div>
 </div></header>
+<div class="mq" aria-hidden="true"><div><span>Salons</span><span>Clinics</span><span>Restaurants</span><span>Barbers</span><span>Dentists</span><span>Cafes</span><span>Spas</span><span>Gyms</span><span>Salons</span><span>Clinics</span><span>Restaurants</span><span>Barbers</span><span>Dentists</span><span>Cafes</span><span>Spas</span><span>Gyms</span></div></div>
 
 <section id="how"><div class="w"><div class="hd rv"><span class="mono">Process</span><h2>Three steps. No risk.</h2></div>
 <div class="bento pro">
@@ -98,20 +186,56 @@ summary{font-size:17px}details{padding:11px 0}details p{font-size:14px;margin-to
 <details><summary>Can I change things after the demo?</summary><p>Yes. Tell us what to adjust and we update it before it goes live.</p></details>
 </div></section>
 
-<section id="contact"><div class="w"><div class="final rv"><span class="mono">Start here</span><h2>Ready to see your website?</h2><p>Message us and we'll send a free demo built for your business.</p>
-<div class="cta"><a id="wa" class="btn b1 hid" href="#">Message on WhatsApp</a><a id="fb" class="btn b2 hid" href="#">Message on Facebook</a><a id="em" class="btn b2 hid" href="#">Email us</a></div></div></div></section>
+<section id="contact"><div class="w"><div class="final rv">
+<div>
+<span class="mono">Start here</span><h2>Ready to see your website?</h2>
+<p class="lead">Message us or leave your details. We will send a free demo built for your business.</p>
+<div class="ch">
+<a class="cb" id="wa" href="https://wa.me/917522805545?text=Hi%20Naem%20Studio%2C%20I%27d%20like%20a%20free%20demo%20website." target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.900 11.500 24 11.500zm0 2.300c5.600 0 10.200 4.600 10.200 10.200S29.600 34.200 24 34.200c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-3.800 1 1-3.700-.3-.4c-1.100-1.700-1.600-3.500-1.600-5.400 0-5.600 4.600-10.200 10.200-10.200zm-4.200 4.600c-.3 0-.7.100-1 .5-.4.400-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.700 1 4.400.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.400-.9 1.200-1.100 1.400-.2.200-.4.300-.7.100-.4-.2-1.500-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.200-.8.200-.2.400-.4.600-.7.200-.2.300-.4.400-.7.100-.3.100-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg><div><b>WhatsApp</b><span>Fastest reply</span></div></a>
+<a class="cb" id="fb" href="https://m.me/naemstudio" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#1877F2"/><path fill="#fff" d="M26.700 38V25.800h4.100l.6-4.800h-4.700v-3c0-1.400.4-2.300 2.400-2.300h2.500V11.400c-.4-.1-1.900-.2-3.600-.2-3.600 0-6.100 2.200-6.100 6.300V21h-4.100v4.800h4.100V38z"/></svg><div><b>Facebook Messenger</b><span>m.me/naemstudio</span></div></a>
+<a class="cb" id="em" href="mailto:naemstudio9@gmail.com?subject=Free%20demo%20website"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fff"/><rect x="8" y="13" width="32" height="22" rx="3" fill="#fff" stroke="#e5e7eb"/><path fill="#4285F4" d="M8 16v17a2 2 0 0 0 2 2h4.500V22.500L8 16z"/><path fill="#34A853" d="M40 16v17a2 2 0 0 1-2 2h-4.500V22.500L40 16z"/><path fill="#FBBC04" d="M40 16v-.5a2.500 2.500 0 0 0-4-2L24 22.500V28z"/><path fill="#EA4335" d="M8 15.500V16l6.500 6.500V28L24 21l9.500 7v-5.500L40 16v-.5a2.500 2.500 0 0 0-4-2L24 22 12 13.500a2.500 2.500 0 0 0-4 2z"/></svg><div><b>Gmail</b><span>naemstudio9@gmail.com</span></div></a>
+</div></div>
+<div class="fm" id="fm">
+<form id="cf" novalidate>
+<h3>Or let us contact you</h3><p class="sub">Leave your WhatsApp or Telegram and we will message you first.</p>
+<div class="seg" role="group" aria-label="Contact method"><button type="button" class="on" data-k="whatsapp"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.900 11.500 24 11.500zm0 2.300c5.600 0 10.200 4.600 10.200 10.200S29.600 34.200 24 34.200c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-3.800 1 1-3.700-.3-.4c-1.100-1.700-1.600-3.500-1.600-5.400 0-5.600 4.600-10.200 10.200-10.200zm-4.200 4.600c-.3 0-.7.100-1 .5-.4.400-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.700 1 4.400.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.400-.9 1.200-1.100 1.400-.2.200-.4.300-.7.100-.4-.2-1.500-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.200-.8.200-.2.400-.4.600-.7.200-.2.300-.4.400-.7.100-.3.100-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg>WhatsApp</button><button type="button" data-k="telegram"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#229ED9"/><path fill="#fff" d="M11 23.500l22.500-8.700c1-.4 1.900.3 1.600 1.700l-3.800 18c-.3 1.300-1 1.600-2.100 1l-5.800-4.300-2.800 2.700c-.3.300-.6.600-1.200.600l.4-6 10.900-9.900c.5-.4-.1-.7-.7-.3l-13.500 8.500-5.800-1.800c-1.300-.4-1.300-1.300.3-1.900z"/></svg>Telegram</button></div>
+<label>Your name<input id="f-name" name="name" autocomplete="name" maxlength="60" placeholder="e.g. Sara" required></label>
+<label><span id="f-clab">WhatsApp number</span><input id="f-contact" name="contact" inputmode="tel" autocomplete="tel" maxlength="60" placeholder="+44 7700 900123" required></label>
+<label>Business name (optional)<input id="f-biz" name="business" maxlength="80" placeholder="e.g. Aria Hair Studio"></label>
+<label>Anything to add? (optional)<textarea id="f-msg" name="message" maxlength="400" rows="2" placeholder="Salon in London, need a booking page"></textarea></label>
+<input class="hp" id="f-web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn b1" id="f-btn" type="submit">Send my free demo request</button>
+<p class="msg" id="f-msg-out" role="status" aria-live="polite"></p>
+</form>
+<div class="done"><div class="ck2">✓</div><h3>Thank you!</h3><p>We got your details and will message you soon with your free demo.</p></div>
+</div>
+</div></div></section>
 
 <footer>© <span id="y"></span> Naem Studio · Web design for local businesses</footer>
+<a class="fab" href="https://wa.me/917522805545?text=Hi%20Naem%20Studio%2C%20I%27d%20like%20a%20free%20demo%20website." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.900 11.500 24 11.500zm0 2.300c5.600 0 10.200 4.600 10.200 10.200S29.600 34.200 24 34.200c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-3.800 1 1-3.700-.3-.4c-1.100-1.700-1.600-3.500-1.600-5.400 0-5.600 4.600-10.200 10.200-10.200zm-4.200 4.600c-.3 0-.7.100-1 .5-.4.400-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.700 1 4.400.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.400-.9 1.200-1.100 1.400-.2.200-.4.300-.7.100-.4-.2-1.500-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.200-.8.200-.2.400-.4.600-.7.200-.2.300-.4.400-.7.100-.3.100-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg></a>
 <script>
-// Fill these in and the buttons appear automatically.
-var WHATSAPP="917522805545";
-var FB_PAGE="";    // e.g. naemstudio  -> m.me/naemstudio
-var EMAIL="naemstudio9@gmail.com";
-function show(id,u){var e=document.getElementById(id);if(u){e.href=u;e.classList.remove("hid")}}
-show("wa",WHATSAPP&&"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("Hi Naem Studio, I'd like a free demo website."));
-show("fb",FB_PAGE&&"https://m.me/"+FB_PAGE);show("em",EMAIL&&"mailto:"+EMAIL);
+var API="https://xbot-xoeo.onrender.com/api/studio/contact";   // Xbot dashboard backend (receives the form)
+var WA_FALLBACK="https://wa.me/917522805545";
 document.getElementById("y").textContent=new Date().getFullYear();
+/* day / night toggle (default = device setting, saved once you tap) */
+document.getElementById("tg").addEventListener("click",function(){var n=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";__nsTheme.apply(n);try{localStorage.setItem("ns-theme",n)}catch(e){}});
+/* reveal on scroll */
 var els=document.querySelectorAll(".rv");
 if("IntersectionObserver"in window){var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
+/* contact form */
+(function(){var kind="whatsapp",$=function(i){return document.getElementById(i)},inp=$("f-contact"),lab=$("f-clab"),out=$("f-msg-out"),btn=$("f-btn");
+document.querySelectorAll(".seg button").forEach(function(b){b.addEventListener("click",function(){kind=b.dataset.k;document.querySelectorAll(".seg button").forEach(function(x){x.classList.toggle("on",x===b)});
+if(kind==="whatsapp"){lab.textContent="WhatsApp number";inp.placeholder="+44 7700 900123";inp.inputMode="tel";inp.autocomplete="tel"}else{lab.textContent="Telegram username";inp.placeholder="@yourname";inp.inputMode="text";inp.autocomplete="off"}inp.value="";out.textContent="";out.className="msg"})});
+function say(t,c){out.className="msg "+(c||"");out.innerHTML=t}
+function check(){var n=$("f-name").value.trim(),v=inp.value.trim();if(n.length<2)return"Please enter your name.";
+if(kind==="whatsapp"){var d=v.replace(/\D/g,"");if(d.length<7||d.length>15)return"Enter your WhatsApp number with country code, e.g. +44 7700 900123."}
+else{var h=v.replace(/^(https?:\/\/)?(www\.)?(t\.me|telegram\.me)\//i,"").replace(/^@/,"").replace(/\/$/,"");if(!/^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(h))return"Enter your Telegram username, e.g. @yourname."}return""}
+$("cf").addEventListener("submit",function(e){e.preventDefault();var er=check();if(er){say(er,"err");return}
+btn.disabled=true;btn.textContent="Sending…";say("Sending. The first request can take up to a minute, please wait.");
+var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){ctl&&ctl.abort()},75000);
+fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},signal:ctl?ctl.signal:undefined,body:JSON.stringify({name:$("f-name").value,kind:kind,contact:inp.value,business:$("f-biz").value,message:$("f-msg").value,website:$("f-web").value})})
+.then(function(r){return r.json().catch(function(){return{ok:false}})}).then(function(d){clearTimeout(tm);
+if(d&&d.ok){$("fm").classList.add("sent")}else{btn.disabled=false;btn.textContent="Send my free demo request";say((d&&d.error?d.error:"Could not send.")+' You can also <a href="'+WA_FALLBACK+'" target="_blank" rel="noopener">message us on WhatsApp</a>.',"err")}})
+.catch(function(){clearTimeout(tm);btn.disabled=false;btn.textContent="Send my free demo request";say('Could not send right now. Please <a href="'+WA_FALLBACK+'" target="_blank" rel="noopener">message us on WhatsApp</a> or email us.',"err")})})})();
 </script>
 </body></html>
