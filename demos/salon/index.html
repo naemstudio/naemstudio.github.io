@@ -10,31 +10,33 @@
 :root{--c:#be185d;--d:#831843;--l:#fdf2f8}*{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1f2937;background:#fff;line-height:1.55}
 a{color:inherit}
+.exp{background:#111827;color:#fde68a;text-align:center;font-size:12.5px;padding:7px 12px}
 .bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid #eee}
 .bar b{flex:1;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pill{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none}
 .p-call{background:var(--c);color:#fff}.p-wa{background:#25d366;color:#fff}.p-ghost{background:#fff;color:var(--d);border:1px solid #e5e7eb}
-.hero{background:radial-gradient(1200px 400px at 80% -10%,rgba(255,255,255,.22),transparent 60%),linear-gradient(135deg,var(--c),var(--d));color:#fff;padding:54px 20px 60px;text-align:center}
-.hero .em{font-size:44px}.hero .kick{display:inline-block;margin:10px 0 0;padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.18);font-size:12.5px;font-weight:600;letter-spacing:.04em}
-.hero h1{margin:14px auto 8px;max-width:640px;font-size:clamp(28px,7vw,44px);line-height:1.15}
+.hero{background:radial-gradient(1200px 400px at 80% -10%,rgba(255,255,255,.22),transparent 60%),linear-gradient(135deg,var(--c),var(--d));color:#fff;padding:30px 18px 32px;text-align:center}
+.hero .em{font-size:32px}.hero .kick{display:inline-block;margin:10px 0 0;padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.18);font-size:12.5px;font-weight:600;letter-spacing:.04em}
+.hero h1{margin:8px auto 6px;max-width:640px;font-size:clamp(28px,7vw,44px);line-height:1.15}
 .hero p{margin:0 auto;max-width:520px;opacity:.92;font-size:17px}
-.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-.cta .pill{padding:14px 24px;font-size:16px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.cta .pill{padding:12px 22px;font-size:16px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
 .cta .p-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);box-shadow:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 18px}
-section{padding:38px 0 6px}h2{margin:0 0 16px;font-size:22px;color:var(--d)}
+section{padding:22px 0 2px}h2{margin:0 0 12px;font-size:22px;color:var(--d)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.card{background:var(--l);border-radius:16px;padding:18px 14px;text-align:center;font-weight:600}
+.card{background:var(--l);border-radius:16px;padding:12px 10px;text-align:center;font-weight:600}
 .card i{display:block;font-style:normal;font-size:28px;margin-bottom:6px}
 .note{font-size:12px;color:#6b7280;margin:10px 0 0}
 .why{display:grid;gap:12px}.why div{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:1px solid #eee;border-radius:14px}
 .why i{font-style:normal;font-size:26px}.why b{display:block}.why span{font-size:14px;color:#6b7280}
 .info{display:grid;gap:12px}.info .row{background:var(--l);border-radius:14px;padding:14px 16px}.info small{display:block;color:var(--c);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11px;margin-bottom:2px}
 .map{margin-top:14px;border-radius:16px;overflow:hidden;border:1px solid #eee}.map iframe{display:block;width:100%;height:240px;border:0}
-.final{margin:42px 0 0;background:linear-gradient(135deg,var(--c),var(--d));color:#fff;text-align:center;padding:38px 20px}
+.final{margin:22px 0 0;background:linear-gradient(135deg,var(--c),var(--d));color:#fff;text-align:center;padding:24px 18px}
 .final h2{color:#fff}.final .cta{margin-top:14px}
-footer{text-align:center;font-size:12px;color:#6b7280;padding:22px 16px 96px}
+footer{text-align:center;font-size:12px;color:#6b7280;padding:16px 16px 84px}
 .fab{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+@media(max-width:640px){.whys{display:none}.card i{font-size:22px;margin-bottom:2px}}
 </style></head><body>
 <div class="bar"><b>💇 Aria Hair Studio</b></div>
 <div class="hero"><div class="em">💇</div><span class="kick">Salon · Your City</span>
@@ -42,7 +44,7 @@ footer{text-align:center;font-size:12px;color:#6b7280;padding:22px 16px 96px}
 <div class="cta"><a class="pill p-wa" href="https://m.me/naemstudio">💬 Message us on Facebook</a></div></div>
 <div class="wrap">
 <section><h2>Our services</h2><div class="grid"><div class="card"><i>✂️</i>Haircut &amp; Styling</div><div class="card"><i>🎨</i>Hair Colour &amp; Spa</div><div class="card"><i>✨</i>Facial &amp; Clean-up</div><div class="card"><i>💄</i>Makeup &amp; Bridal</div><div class="card"><i>💅</i>Manicure &amp; Pedicure</div><div class="card"><i>🌿</i>Threading &amp; Waxing</div></div><p class="note">Sample content for this preview. Your real services and prices go here once you approve.</p></section>
-<section><h2>Why customers love it</h2><div class="why"><div><i>📲</i><p style="margin:0"><b>Book in one tap</b><span>Message us on WhatsApp and pick your slot.</span></p></div><div><i>🕘</i><p style="margin:0"><b>Timings at a glance</b><span>See when we are open before you walk in.</span></p></div><div><i>📍</i><p style="margin:0"><b>Easy to find</b><span>One tap opens the map to our door.</span></p></div></div></section>
+<section class="whys"><h2>Why customers love it</h2><div class="why"><div><i>📲</i><p style="margin:0"><b>Book in one tap</b><span>Message us on WhatsApp and pick your slot.</span></p></div><div><i>🕘</i><p style="margin:0"><b>Timings at a glance</b><span>See when we are open before you walk in.</span></p></div><div><i>📍</i><p style="margin:0"><b>Easy to find</b><span>One tap opens the map to our door.</span></p></div></div></section>
 <section><h2>Visit us</h2><div class="info"><div class="row"><small>Opening hours</small>Mon–Sat 09:00–19:00 ·  Sun 10:00–16:00</div></div>
 <p style="margin:14px 0 0"><a class="pill p-ghost" href="https://www.google.com/maps/search/Aria%20Hair%20Studio%20%20Your%20City" target="_blank" rel="noopener">📍 Open in Google Maps</a></p></section>
 </div>

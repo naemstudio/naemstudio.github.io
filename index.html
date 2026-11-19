@@ -47,7 +47,17 @@ summary:after{content:"+";color:var(--ac)}details[open] summary:after{content:"â
 .final h2{font-size:clamp(30px,6vw,52px)}.final p{color:var(--mu);margin:12px auto 0;max-width:460px}.final .cta{justify-content:center}
 .hid{display:none}footer{text-align:center;color:var(--mu);font-size:13px;padding:22px 20px 30px}
 .rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
-@media(max-width:700px){nav .r a:not(.btn){display:none}.t,.t.w3,.t.w4{grid-column:span 6}.hero{padding-top:40px}section{padding:30px 0}.pr{grid-template-columns:1fr}}
+@media(max-width:700px){nav .r a:not(.btn){display:none}.t,.t.w3,.t.w4{grid-column:span 6}
+.hero{padding:26px 0 22px}.hero h1{font-size:clamp(32px,9.5vw,44px);margin:10px 0 10px}.hero p{font-size:15.5px}.cta{margin-top:16px}.cta .btn{padding:11px 20px;font-size:14px}.strip{display:none}
+section{padding:18px 0}.hd{margin-bottom:12px}.hd h2{font-size:26px;margin-top:6px}
+.bento{gap:10px}.t{padding:14px 16px;border-radius:18px}.t h3{font-size:18px;margin:4px 0 2px}.t p{font-size:14px}
+.pro .t{display:flex;gap:14px;align-items:center}.pro .n{font-size:28px;min-width:38px}.pro .t div+div{flex:1}
+.hl p{display:none}.hl h3{font-size:17px}
+.sc{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:0 20px 6px}.sc .t{min-width:72%;scroll-snap-align:start}.scr{height:96px!important;margin-bottom:8px!important;font-size:16px!important}.sc .t p{display:none}
+.pr{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}.price{font-size:24px!important}.price small{font-size:10px!important}
+.ck{grid-template-columns:1fr 1fr;font-size:13.5px;gap:6px}
+summary{font-size:17px}details{padding:11px 0}details p{font-size:14px;margin-top:6px}
+.final{padding:26px 16px;border-radius:22px}.final h2{font-size:28px}.final p{font-size:14.5px}footer{padding:14px 20px 22px}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 </style></head><body>
 <nav><div class="w"><a class="logo" href="#">Naem<i> Studio</i></a><div class="r"><a href="#demos">Demos</a><a href="#price">Pricing</a><a href="#faq">FAQ</a><a class="btn b1" href="#contact">Free demo</a></div></div></nav>
@@ -61,15 +71,15 @@ summary:after{content:"+";color:var(--ac)}details[open] summary:after{content:"â
 </div></header>
 
 <section id="how"><div class="w"><div class="hd rv"><span class="mono">Process</span><h2>Three steps. No risk.</h2></div>
-<div class="bento">
-<div class="t rv"><div class="n">01</div><h3>We build a demo</h3><p>A real preview with your name, hours and contact details.</p></div>
-<div class="t rv"><div class="n">02</div><h3>You review it</h3><p>Love it? We tweak it. Not for you? You pay nothing.</p></div>
-<div class="t rv"><div class="n">03</div><h3>Go live</h3><p>We set up domain and hosting and publish under your name.</p></div>
+<div class="bento pro">
+<div class="t rv"><div class="n">01</div><div><h3>We build a demo</h3><p>A real preview with your name, hours and contact details.</p></div></div>
+<div class="t rv"><div class="n">02</div><div><h3>You review it</h3><p>Love it? We tweak it. Not for you? You pay nothing.</p></div></div>
+<div class="t rv"><div class="n">03</div><div><h3>Go live</h3><p>We set up domain and hosting and publish under your name.</p></div></div>
 <div class="t w6 hl rv"><span class="mono">Built for how customers reach you</span><h3>Call, WhatsApp and Messenger, one tap away on every screen.</h3><p>Most local customers find you on their phone, so every site is designed for the phone first, and stays fast and light.</p></div>
 </div></div></section>
 
 <section id="demos"><div class="w"><div class="hd rv"><span class="mono">Sample sites</span><h2>See it in action.</h2></div>
-<div class="bento">
+<div class="bento sc">
 <a class="t ph rv" href="demos/salon/"><div class="scr" style="background:linear-gradient(135deg,#be185d,#831843)"><span>Look good.<br>Feel great.<br><small>Book on WhatsApp</small></span></div><h3>Salon &amp; Beauty</h3><p>Services, hours and one-tap booking.</p><span class="vw">Open demo â†’</span></a>
 <a class="t ph rv" href="demos/clinic/"><div class="scr" style="background:linear-gradient(135deg,#0369a1,#0c4a6e)"><span>Caring for your health.<br><small>Book appointment</small></span></div><h3>Clinic &amp; Dental</h3><p>Clear timings and easy appointments.</p><span class="vw">Open demo â†’</span></a>
 <a class="t ph rv" href="demos/restaurant/"><div class="scr" style="background:linear-gradient(135deg,#c2410c,#7c2d12)"><span>Fresh food,<br>made with love.<br><small>Order on WhatsApp</small></span></div><h3>Restaurant &amp; Cafe</h3><p>Menu highlights, hours and orders.</p><span class="vw">Open demo â†’</span></a>
