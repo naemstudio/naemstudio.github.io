@@ -36,15 +36,27 @@ section{padding:22px 0 2px}h2{margin:0 0 12px;font-size:22px;color:var(--d)}
 .final h2{color:#fff}.final .cta{margin-top:14px}
 footer{text-align:center;font-size:12px;color:#6b7280;padding:16px 16px 84px}
 .fab{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
-@media(max-width:640px){.whys{display:none}.card i{font-size:22px;margin-bottom:2px}}
+.mn{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.mi{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 15px;background:var(--l);border-radius:14px}
+.mi b{display:block;font-size:15.5px}.mi span{font-size:13px;color:#6b7280}.mi em{font-style:normal;font-weight:700;color:var(--d);white-space:nowrap;font-size:15px}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.stp div{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #eee;border-radius:14px}
+.stp i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--c);color:#fff;font-style:normal;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.stp b{display:block;font-size:15px}.stp span{font-size:13.5px;color:#6b7280}
+.gl{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.gl div{aspect-ratio:1;border-radius:14px;background:linear-gradient(135deg,var(--l),#fff);border:1px dashed var(--c);display:flex;align-items:center;justify-content:center;font-size:30px}
+details{border-top:1px solid #eee;padding:12px 0}details:last-of-type{border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;font-size:15.5px}summary:after{content:"+";color:var(--c);font-weight:700}details[open] summary:after{content:"–"}details p{margin:8px 0 0;color:#6b7280;font-size:14.5px}
+@media(max-width:640px){.gals{display:none}.mi{padding:11px 13px}.stp div{padding:11px 12px}}
 </style></head><body>
 <div class="bar"><b>🍽️ Saffron &amp; Sage Kitchen</b></div>
 <div class="hero"><div class="em">🍽️</div><span class="kick">Restaurant · Your City</span>
 <h1>Saffron &amp; Sage Kitchen</h1><p>Fresh food, made with love. Dine in, take away, or order on WhatsApp.</p>
 <div class="cta"><a class="pill p-wa" href="https://m.me/naemstudio">💬 Message us on Facebook</a></div></div>
 <div class="wrap">
-<section><h2>From our kitchen</h2><div class="grid"><div class="card"><i>🥗</i>Starters</div><div class="card"><i>🍛</i>Main Course</div><div class="card"><i>🍞</i>Breads &amp; Rice</div><div class="card"><i>🍰</i>Desserts</div><div class="card"><i>🥤</i>Beverages</div><div class="card"><i>⭐</i>Chef&#x27;s Specials</div></div><p class="note">Sample content for this preview. Your real services and prices go here once you approve.</p></section>
-<section class="whys"><h2>Why customers love it</h2><div class="why"><div><i>📲</i><p style="margin:0"><b>Order or reserve on WhatsApp</b><span>No app needed, just send a message.</span></p></div><div><i>🕘</i><p style="margin:0"><b>Open hours at a glance</b><span>Know when to drop by.</span></p></div><div><i>📍</i><p style="margin:0"><b>Easy directions</b><span>One tap opens the map.</span></p></div></div></section>
+<section><h2>From our kitchen</h2><div class="mn"><div class="mi"><p style="margin:0"><b>Starters</b><span>Light bites to begin</span></p><em>from £6</em></div><div class="mi"><p style="margin:0"><b>Main Course</b><span>Our house favourites</span></p><em>from £14</em></div><div class="mi"><p style="margin:0"><b>Breads &amp; Rice</b><span>Fresh and fragrant</span></p><em>from £4</em></div><div class="mi"><p style="margin:0"><b>Desserts</b><span>A sweet finish</span></p><em>from £6</em></div><div class="mi"><p style="margin:0"><b>Beverages</b><span>Hot, cold and fresh</span></p><em>from £3</em></div><div class="mi"><p style="margin:0"><b>Chef&#x27;s Specials</b><span>Changes with the season</span></p><em>from £18</em></div></div><p class="note">Sample services and prices. Your real ones go here once you approve.</p></section>
+<section><h2>How it works</h2><div class="stp"><div><i>1</i><p style="margin:0"><b>Browse the menu</b><span>See what&#x27;s cooking today.</span></p></div><div><i>2</i><p style="margin:0"><b>Message us</b><span>Order or reserve a table in one message.</span></p></div><div><i>3</i><p style="margin:0"><b>Enjoy</b><span>Dine in or take away.</span></p></div></div></section>
+<section class="gals"><h2>Gallery</h2><div class="gl"><div>🍛</div><div>🥗</div><div>🍰</div><div>🍽️</div></div><p class="note">Your own photos go here.</p></section>
+<section><h2>Good to know</h2><details><summary>Can I reserve a table?</summary><p>Yes, send us a message with the date, time and number of guests.</p></details><details><summary>Do you do takeaway?</summary><p>Yes, message your order and we will tell you when it is ready.</p></details><details><summary>Do you cater for dietary needs?</summary><p>Tell us your needs when you message and we will guide you.</p></details></section>
 <section><h2>Visit us</h2><div class="info"><div class="row"><small>Opening hours</small>Mon–Sun 12:00–22:30</div></div>
 <p style="margin:14px 0 0"><a class="pill p-ghost" href="https://www.google.com/maps/search/Saffron%20%26%20Sage%20Kitchen%20%20Your%20City" target="_blank" rel="noopener">📍 Open in Google Maps</a></p></section>
 </div>

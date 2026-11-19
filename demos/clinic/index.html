@@ -36,15 +36,27 @@ section{padding:22px 0 2px}h2{margin:0 0 12px;font-size:22px;color:var(--d)}
 .final h2{color:#fff}.final .cta{margin-top:14px}
 footer{text-align:center;font-size:12px;color:#6b7280;padding:16px 16px 84px}
 .fab{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
-@media(max-width:640px){.whys{display:none}.card i{font-size:22px;margin-bottom:2px}}
+.mn{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.mi{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 15px;background:var(--l);border-radius:14px}
+.mi b{display:block;font-size:15.5px}.mi span{font-size:13px;color:#6b7280}.mi em{font-style:normal;font-weight:700;color:var(--d);white-space:nowrap;font-size:15px}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.stp div{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #eee;border-radius:14px}
+.stp i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--c);color:#fff;font-style:normal;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.stp b{display:block;font-size:15px}.stp span{font-size:13.5px;color:#6b7280}
+.gl{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.gl div{aspect-ratio:1;border-radius:14px;background:linear-gradient(135deg,var(--l),#fff);border:1px dashed var(--c);display:flex;align-items:center;justify-content:center;font-size:30px}
+details{border-top:1px solid #eee;padding:12px 0}details:last-of-type{border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;font-size:15.5px}summary:after{content:"+";color:var(--c);font-weight:700}details[open] summary:after{content:"–"}details p{margin:8px 0 0;color:#6b7280;font-size:14.5px}
+@media(max-width:640px){.gals{display:none}.mi{padding:11px 13px}.stp div{padding:11px 12px}}
 </style></head><body>
 <div class="bar"><b>🩺 Willow Family Clinic</b></div>
 <div class="hero"><div class="em">🩺</div><span class="kick">Clinic · Your City</span>
 <h1>Willow Family Clinic</h1><p>Caring for your health, close to home. Clear timings, easy appointments.</p>
 <div class="cta"><a class="pill p-wa" href="https://m.me/naemstudio">💬 Message us on Facebook</a></div></div>
 <div class="wrap">
-<section><h2>Care we offer</h2><div class="grid"><div class="card"><i>🩺</i>General Consultation</div><div class="card"><i>🧪</i>Health Check-ups</div><div class="card"><i>💉</i>Vaccinations</div><div class="card"><i>📋</i>Follow-up Care</div><div class="card"><i>👨‍👩‍👧</i>Family Care</div><div class="card"><i>🕑</i>Walk-in Hours</div></div><p class="note">Sample content for this preview. Your real services and prices go here once you approve.</p></section>
-<section class="whys"><h2>Why customers love it</h2><div class="why"><div><i>📲</i><p style="margin:0"><b>Appointments on WhatsApp</b><span>Send a message, get a time that suits you.</span></p></div><div><i>🕘</i><p style="margin:0"><b>Know our timings</b><span>Opening hours always up to date.</span></p></div><div><i>📍</i><p style="margin:0"><b>Find us fast</b><span>Map and call button, one tap away.</span></p></div></div></section>
+<section><h2>Care we offer</h2><div class="mn"><div class="mi"><p style="margin:0"><b>General Consultation</b><span>See a doctor for any concern</span></p><em>from £40</em></div><div class="mi"><p style="margin:0"><b>Health Check-ups</b><span>Routine tests and advice</span></p><em>from £90</em></div><div class="mi"><p style="margin:0"><b>Vaccinations</b><span>Adults and children</span></p><em>from £30</em></div><div class="mi"><p style="margin:0"><b>Follow-up Care</b><span>Review and ongoing support</span></p><em>from £25</em></div><div class="mi"><p style="margin:0"><b>Family Care</b><span>Care for the whole family</span></p><em>from £50</em></div><div class="mi"><p style="margin:0"><b>Walk-in Hours</b><span>Ask for today&#x27;s availability</span></p><em>On request</em></div></div><p class="note">Sample services and prices. Your real ones go here once you approve.</p></section>
+<section><h2>How it works</h2><div class="stp"><div><i>1</i><p style="margin:0"><b>Message us</b><span>Tell us what you need and your preferred time.</span></p></div><div><i>2</i><p style="margin:0"><b>Get confirmed</b><span>We reply with an appointment slot.</span></p></div><div><i>3</i><p style="margin:0"><b>Visit the clinic</b><span>Arrive a few minutes early and we take it from there.</span></p></div></div></section>
+<section class="gals"><h2>Gallery</h2><div class="gl"><div>🩺</div><div>🏥</div><div>💊</div><div>🌿</div></div><p class="note">Your own photos go here.</p></section>
+<section><h2>Good to know</h2><details><summary>How do I book an appointment?</summary><p>Send us a message on WhatsApp or Messenger, or call during opening hours.</p></details><details><summary>Do you take walk-ins?</summary><p>Please message first so we can tell you the best time to come.</p></details><details><summary>What should I bring?</summary><p>Bring any previous reports or prescriptions that relate to your visit.</p></details></section>
 <section><h2>Visit us</h2><div class="info"><div class="row"><small>Opening hours</small>Mon–Fri 08:30–18:00 ·  Sat 09:00–13:00</div></div>
 <p style="margin:14px 0 0"><a class="pill p-ghost" href="https://www.google.com/maps/search/Willow%20Family%20Clinic%20%20Your%20City" target="_blank" rel="noopener">📍 Open in Google Maps</a></p></section>
 </div>

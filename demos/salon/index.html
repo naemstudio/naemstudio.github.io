@@ -36,15 +36,27 @@ section{padding:22px 0 2px}h2{margin:0 0 12px;font-size:22px;color:var(--d)}
 .final h2{color:#fff}.final .cta{margin-top:14px}
 footer{text-align:center;font-size:12px;color:#6b7280;padding:16px 16px 84px}
 .fab{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
-@media(max-width:640px){.whys{display:none}.card i{font-size:22px;margin-bottom:2px}}
+.mn{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.mi{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 15px;background:var(--l);border-radius:14px}
+.mi b{display:block;font-size:15.5px}.mi span{font-size:13px;color:#6b7280}.mi em{font-style:normal;font-weight:700;color:var(--d);white-space:nowrap;font-size:15px}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.stp div{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #eee;border-radius:14px}
+.stp i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--c);color:#fff;font-style:normal;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.stp b{display:block;font-size:15px}.stp span{font-size:13.5px;color:#6b7280}
+.gl{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.gl div{aspect-ratio:1;border-radius:14px;background:linear-gradient(135deg,var(--l),#fff);border:1px dashed var(--c);display:flex;align-items:center;justify-content:center;font-size:30px}
+details{border-top:1px solid #eee;padding:12px 0}details:last-of-type{border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;font-size:15.5px}summary:after{content:"+";color:var(--c);font-weight:700}details[open] summary:after{content:"–"}details p{margin:8px 0 0;color:#6b7280;font-size:14.5px}
+@media(max-width:640px){.gals{display:none}.mi{padding:11px 13px}.stp div{padding:11px 12px}}
 </style></head><body>
 <div class="bar"><b>💇 Aria Hair Studio</b></div>
 <div class="hero"><div class="em">💇</div><span class="kick">Salon · Your City</span>
 <h1>Aria Hair Studio</h1><p>Look good. Feel great. Walk in, relax, walk out glowing.</p>
 <div class="cta"><a class="pill p-wa" href="https://m.me/naemstudio">💬 Message us on Facebook</a></div></div>
 <div class="wrap">
-<section><h2>Our services</h2><div class="grid"><div class="card"><i>✂️</i>Haircut &amp; Styling</div><div class="card"><i>🎨</i>Hair Colour &amp; Spa</div><div class="card"><i>✨</i>Facial &amp; Clean-up</div><div class="card"><i>💄</i>Makeup &amp; Bridal</div><div class="card"><i>💅</i>Manicure &amp; Pedicure</div><div class="card"><i>🌿</i>Threading &amp; Waxing</div></div><p class="note">Sample content for this preview. Your real services and prices go here once you approve.</p></section>
-<section class="whys"><h2>Why customers love it</h2><div class="why"><div><i>📲</i><p style="margin:0"><b>Book in one tap</b><span>Message us on WhatsApp and pick your slot.</span></p></div><div><i>🕘</i><p style="margin:0"><b>Timings at a glance</b><span>See when we are open before you walk in.</span></p></div><div><i>📍</i><p style="margin:0"><b>Easy to find</b><span>One tap opens the map to our door.</span></p></div></div></section>
+<section><h2>Our services</h2><div class="mn"><div class="mi"><p style="margin:0"><b>Haircut &amp; Styling</b><span>Wash, cut and finish</span></p><em>from £30</em></div><div class="mi"><p style="margin:0"><b>Colour &amp; Highlights</b><span>Full colour, balayage, toning</span></p><em>from £70</em></div><div class="mi"><p style="margin:0"><b>Facial &amp; Clean-up</b><span>Deep cleanse and glow</span></p><em>from £40</em></div><div class="mi"><p style="margin:0"><b>Bridal &amp; Makeup</b><span>Trial and event day</span></p><em>from £120</em></div><div class="mi"><p style="margin:0"><b>Manicure &amp; Pedicure</b><span>Shape, polish, care</span></p><em>from £35</em></div><div class="mi"><p style="margin:0"><b>Threading &amp; Waxing</b><span>Quick and gentle</span></p><em>from £15</em></div></div><p class="note">Sample services and prices. Your real ones go here once you approve.</p></section>
+<section><h2>How it works</h2><div class="stp"><div><i>1</i><p style="margin:0"><b>Pick a service</b><span>Choose what you need from the menu.</span></p></div><div><i>2</i><p style="margin:0"><b>Send a message</b><span>WhatsApp or Messenger, whichever you like.</span></p></div><div><i>3</i><p style="margin:0"><b>Get your slot</b><span>We confirm a time and you walk in.</span></p></div></div></section>
+<section class="gals"><h2>Gallery</h2><div class="gl"><div>💇</div><div>✨</div><div>💅</div><div>🌿</div></div><p class="note">Your own photos go here.</p></section>
+<section><h2>Good to know</h2><details><summary>Do I need to book?</summary><p>Booking is recommended so we can keep your slot. Walk-ins are welcome when we have space.</p></details><details><summary>How do I book?</summary><p>Tap the button and send us a message with your preferred service and time.</p></details><details><summary>Can I reschedule?</summary><p>Yes, just message us and we will move your slot.</p></details></section>
 <section><h2>Visit us</h2><div class="info"><div class="row"><small>Opening hours</small>Mon–Sat 09:00–19:00 ·  Sun 10:00–16:00</div></div>
 <p style="margin:14px 0 0"><a class="pill p-ghost" href="https://www.google.com/maps/search/Aria%20Hair%20Studio%20%20Your%20City" target="_blank" rel="noopener">📍 Open in Google Maps</a></p></section>
 </div>
