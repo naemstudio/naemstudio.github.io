@@ -64,13 +64,49 @@ footer{text-align:center;font-size:12.5px;color:var(--mu);padding:16px 16px 10px
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.dot.on{animation:none}}
 .hero{background-blend-mode:normal}.hero h1 em{color:#fcd34d}.final{background:linear-gradient(135deg,#9a3412,#431407)}
 .mn{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:#fff;border-bottom:1px solid var(--ln);scrollbar-width:none}.mn::-webkit-scrollbar{display:none}.mn a{flex:none;padding:8px 14px;border-radius:999px;font-weight:700;font-size:13.5px;text-decoration:none;color:var(--ink)}.mn a.on{background:var(--l);color:var(--d);box-shadow:0 0 0 1px var(--c) inset}.mn a:hover{color:var(--c)}@media(min-width:700px){.mn{justify-content:center}}
-</style></head><body class="rest">
+
+/*v2*/
+.gl{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:640px){.gl{grid-template-columns:repeat(3,1fr)}}
+.gl figure{margin:0;position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;display:flex;align-items:flex-end;padding:12px;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 28%,#fff),color-mix(in srgb,var(--c) 6%,#fff));border:1px solid var(--ln);transition:transform .25s,box-shadow .25s}
+.gl figure i{position:absolute;right:10px;top:6px;font-style:normal;font-size:46px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.12))}
+.gl figure b{font-size:14px;color:var(--d)}
+.gl figure:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.gl img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block;transition:transform .3s}.gl img:hover{transform:scale(1.03)}
+.hero.has-ph{color:#fff!important;background-size:cover!important;background-position:center!important}.hero.has-ph h1,.hero.has-ph p,.hero.has-ph h1 em{color:#fff!important}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;margin-top:6px}
+.ct a{display:block;padding:16px;border:1px solid var(--ln);border-radius:18px;text-decoration:none;background:var(--l);transition:.2s}.ct a:hover{transform:translateY(-3px);border-color:var(--c)}
+.ct b{display:block}.ct span{font-size:13px;color:var(--mu)}
+.bk textarea{width:100%;font:16px inherit;font-family:inherit;border:1px solid #e5e7eb;border-radius:12px;padding:12px;min-height:90px;outline:none;resize:vertical}.bk textarea:focus{border-color:var(--c);box-shadow:0 0 0 3px var(--l)}
+.bk .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.alt{margin:10px 0 0;font-size:13px;color:var(--mu);text-align:center}.alt a{color:var(--d);font-weight:700}
+/* salon: light blush, italic serif, arch */
+body.salon .hero{background:linear-gradient(180deg,#fdf2f8,#fff);color:var(--d)}
+body.salon .hero:before{background:radial-gradient(420px 240px at 88% 0,rgba(190,24,93,.16),transparent 70%)}
+body.salon .hero:after{content:"";position:absolute;right:-30px;bottom:-70px;width:200px;height:250px;border-radius:999px 999px 0 0;border:2px solid var(--c);opacity:.2}
+body.salon .hero h1{font-style:italic}body.salon .hero h1 em{color:var(--c)}body.salon .hero p{color:#4b5563;opacity:1}
+body.salon .chip{background:#fff;color:var(--d);border-color:#f3d4e3;backdrop-filter:none}
+body.salon .cta .p3{background:#fff;color:var(--d);border:1px solid #f3d4e3}
+body.salon .sv{border-radius:24px;background:#fff;border:1px solid #f6dce8}body.salon .why div,body.salon .stp div{border-radius:24px}
+/* clinic: clean sky, sans, dotted pattern, tidy cards */
+body.clinic h1,body.clinic h2,body.clinic h3,body.clinic .bar b{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-weight:800;letter-spacing:-.02em}
+body.clinic .hero{background:linear-gradient(180deg,#e0f2fe,#fff);color:var(--d)}
+body.clinic .hero:before{background-image:radial-gradient(circle,rgba(3,105,161,.16) 1.6px,transparent 1.8px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);mask-image:linear-gradient(180deg,#000,transparent 85%)}
+body.clinic .hero h1 em{color:var(--c);font-style:normal}body.clinic .hero p{color:#475569;opacity:1}
+body.clinic .chip{background:#fff;color:var(--d);border-color:#bae6fd;backdrop-filter:none}
+body.clinic .cta .p3{background:#fff;color:var(--d);border:1px solid #bae6fd}
+body.clinic .sv{background:#fff;border:1px solid var(--ln);border-left:4px solid var(--c);border-radius:12px}body.clinic .why div,body.clinic .stp div,body.clinic .tm div,body.clinic .bk{border-radius:12px}
+/* restaurant: dark, spaced caps, menu list */
+body.rest .hero h1{text-transform:uppercase;letter-spacing:.08em;font-size:clamp(28px,7vw,50px)}
+body.rest h2{text-align:center;text-transform:uppercase;letter-spacing:.12em;font-size:20px}body.rest h2:after{content:"";display:block;width:44px;height:2px;background:var(--c);margin:10px auto 0}
+body.rest .sub{text-align:center}
+body.rest .svc{grid-template-columns:1fr;gap:0}body.rest .sv{background:none;border-radius:0;border:0;border-bottom:1px dashed #d6c3b3;padding:14px 2px}body.rest .sv:hover{background:var(--l);transform:none}body.rest .sv i{display:none}
+body.rest .why div,body.rest .stp div,body.rest .tm div{border-radius:6px}
+</style></head><body class="rest" data-pg="gallery">
 <div class="rib">5-page Pro sample by <a href="https://naemstudio.github.io/#contact">Naem Studio</a> · get one for your business →</div>
 <div class="bar"><b>🍽️ Saffron &amp; Sage Kitchen</b><a class="pill p2" href="https://wa.me/917522805545?text=Hi%20Naem%20Studio%2C%20I%20tried%20the%20Saffron%20%26%20Sage%20Kitchen%20sample%20site%20and%20I%27d%20like%20one%20for%20my%20business." target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.9 11.5 24 11.5zm0 2.3c5.6 0 10.2 4.6 10.2 10.2S29.6 34.2 24 34.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-3.8 1 1-3.7-.3-.4c-1.1-1.7-1.6-3.5-1.6-5.4 0-5.6 4.6-10.2 10.2-10.2zm-4.2 4.6c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.6 4.1 6.4 5.6 3.1 1.2 3.7 1 4.4.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5s-2.2-1.1-2.5-1.2c-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.100 1.4-.2.2-.4.3-.7.1-.4-.2-1.5-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg> Chat</a></div>
 <nav class="mn" aria-label="Pages"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html" class="on" aria-current="page">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
 <header class="hero"><div class="in"><h1>Gallery</h1><p>A taste of what we cook.</p></div></header>
 <div class="wrap">
-<section class="rv"><h2>From the kitchen</h2><div class="gl"><div>🍛</div><div>🥗</div><div>🍰</div><div>🍽️</div></div><p class="note">Your own photos go here.</p></section>
+<section class="rv"><h2>From the kitchen</h2><div class="gl" id="gl"><figure><i>🍛</i><b>House curries</b></figure><figure><i>🥗</i><b>Fresh salads</b></figure><figure><i>🍰</i><b>Desserts</b></figure><figure><i>🍽️</i><b>Dining room</b></figure><figure><i>🔥</i><b>Open kitchen</b></figure><figure><i>🥂</i><b>Special evenings</b></figure></div><p class="note">Sample tiles. Your real photos replace these.</p></section>
 
 </div>
 <div class="final"><h2>Ready when you are</h2><p>Message your order or table request. We reply fast.</p><div class="cta"><a class="pill p2" href="https://wa.me/917522805545?text=Hi%20Naem%20Studio%2C%20I%20tried%20the%20Saffron%20%26%20Sage%20Kitchen%20sample%20site%20and%20I%27d%20like%20one%20for%20my%20business." target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path fill="#fff" d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.4 1.7 6.3L11.5 36.5l6.4-1.6c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S30.9 11.5 24 11.5zm0 2.3c5.6 0 10.2 4.6 10.2 10.2S29.6 34.2 24 34.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-3.8 1 1-3.7-.3-.4c-1.1-1.7-1.6-3.5-1.6-5.4 0-5.6 4.6-10.2 10.2-10.2zm-4.2 4.6c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.6 4.1 6.4 5.6 3.1 1.2 3.7 1 4.4.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5s-2.2-1.1-2.5-1.2c-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.100 1.4-.2.2-.4.3-.7.1-.4-.2-1.5-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.8-2-1.100-2.700-.3-.7-.6-.6-.8-.6z"/></svg> Message on WhatsApp</a></div></div>
@@ -84,4 +120,10 @@ if(on){t="Open now · until "+f(h[1])}else{var i,nx=null;if(h&&m<h[0]){nx="today
 if($("st")){$("st").textContent=t;if(on)$("dot").className="dot on"}var r=document.querySelector('#hrs [data-d="'+d+'"]');if(r)r.className="today"})();
 if($("go"))$("go").addEventListener("click",function(){var g=$('g').value,w=$('w').value.trim(),n=$('n').value.trim();var t='Table request: ' + g + (g==='1'?' guest':' guests') + ', ' + (w||'time to confirm') + (n?' (name: '+n+')':'');var u="https://wa.me/917522805545?text="+encodeURIComponent(t+" (sent from the Saffron & Sage Kitchen sample site)");window.open(u,"_blank","noopener")});
 var els=document.querySelectorAll(".rv");if("IntersectionObserver"in window){var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
-</script></body></html>
+</script><script>(function(){var N="restaurant",g=document.getElementById("gl"),h=document.querySelector(".hero");
+fetch("../photos.json").then(function(r){return r.json()}).then(function(d){var u=(d[N]||[]).filter(function(x){return /^https:\/\//.test(x)});if(!u.length)return;
+if(g){g.innerHTML=u.map(function(x,i){var im=document.createElement("img");im.src=x;im.alt="Photo "+(i+1);im.loading="lazy";return im.outerHTML}).join("")}
+if(h&&document.body.dataset.pg==="home"){h.classList.add("has-ph");h.style.backgroundImage="linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("+u[0]+")"}}).catch(function(){})})();
+var cg=document.getElementById("cg");if(cg){function T(){var n=document.getElementById("cn").value.trim(),p=document.getElementById("cp").value.trim(),m=document.getElementById("cm").value.trim();return (m||"Hello, I have a question")+(n?" (name: "+n+")":"")+(p?" (phone: "+p+")":"")+" - sent from the sample site"}
+cg.addEventListener("click",function(){window.open("https://wa.me/917522805545?text="+encodeURIComponent(T()),"_blank","noopener")});
+document.getElementById("ce").addEventListener("click",function(){location.href="mailto:naemstudio9@gmail.com?subject="+encodeURIComponent("Message from the Gallery sample site")+"&body="+encodeURIComponent(T())})}</script></body></html>
